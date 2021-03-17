@@ -9,13 +9,13 @@ import Contact from './component/pages/Contact';
 function App() {
   return (
     <>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <Switch>
-        <Route exact path='/' exact component={Home}/>
-        <Route exact path='/about' exact component={About}/>
-        <Route exact path='/contact' exact component={Contact}/>
-        <Route exact path='/sign-up' exact component={SignUp}/>
+        <Route  path='/' exact component={Home}/>
+        <Route  path='/about' exact component={About}/>
+        <Route  path='/contact' exact component={Contact}/>
+        <Route  path='/sign-up' exact component={SignUp}/>
       </Switch>
     </Router>
     </>
